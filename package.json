@@ -1,0 +1,12 @@
+{
+  "name": "scape-windows",
+  "version": "1.0.0",
+  "description": "new proyect   - Crear repo en github y desplegar en gitpages.   - Desplegar react en el repo.      * Abrir terminal en carpeta proyect(scape-windows).      *",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
