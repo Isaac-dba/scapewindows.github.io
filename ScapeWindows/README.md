@@ -15,3 +15,11 @@ new proyect
             - npm install
             - npm run dev
 
+   - Desplegar react en github pages
+     & npm install gh-pages --save-dev
+     & en package.json despues de dev y antes del build añadir:
+       - "predeploy": "npm run build",
+       - "deploy": "gh-pages -d dist"
+      & en vite.config.js añadir:
+        "base": "/scapewindows.github.io"
+
