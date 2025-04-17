@@ -13,10 +13,11 @@ new proyect
            Done. Now run:
             - cd ScapeWindows 
             - npm install
-            - npm run dev
+            - npm run dev (levantamos un servidor local)
 
-   - Desplegar react en github pages
-     & npm install gh-pages --save-dev
+   - Desplegar react en github pages (para tener nuestro proyect en la wed )
+     & npm install gh-pages --save-dev (creo que este se hace al final y no ahora pero no 
+     importa por que me ha funcionado igual)
      & en package.json despues de dev y antes del build añadir:
        - "predeploy": "npm run build",
        - "deploy": "gh-pages -d dist"
@@ -34,3 +35,12 @@ new proyect
              de la pagina y si ya estaba con main al cambiar a gh-pages se 
              actualiza el url.
 
+  - Para pruebas tecnicas usar eslint y (standardjs.com)
+    - prevenir errores y fallos no deseados
+    - eslint es una extension de vs
+    - standardjs.com hay que &npm install standard -D
+    - y luego en el package.json configurar lo siguiente
+    -  "eslintConfig": {
+    "extends": "./node_modules/standard/.esLintrc.json"
+  }. al final del todo
+    
