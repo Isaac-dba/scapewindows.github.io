@@ -4,7 +4,7 @@ new proyect
   - Desplegar react en el repo.
      * Abrir terminal en carpeta proyect(scape-windows).
      * lista de comandos que me funciono:
-        & npm install
+        & npm install (optional)
         & npm create vite@latest
            -project name:
            -package.json
