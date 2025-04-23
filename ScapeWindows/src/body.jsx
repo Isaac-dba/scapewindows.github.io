@@ -1,4 +1,5 @@
 // import { Nivel0 } from "./niveles/nivel0";
+import { Vela } from "./obj3D/vela.jsx";
 
 function BodySW(){
     
@@ -18,6 +19,7 @@ function BodySW(){
                     </div>
                 </div>
             </div>
+            <Vela />
             <div className="suelo">
                 <div className="innerSuelo">
                     <div className="item"></div>
@@ -28,10 +30,10 @@ function BodySW(){
                 </div>
                 <div className="innerSuelo">
                     <div className="item-1"></div>
-                    <div className="item-2"></div>
-                    <div className="item-3"></div>
-                    <div className="item-4"></div>
-                    <div className="item-5"></div>
+                    <div className="item"></div>
+                    <div className="item"></div>
+                    <div className="item"></div>
+                    <div className="item"></div>
                     <div className="item-6"></div>
                 </div>
                 <div className="innerSuelo">
@@ -43,10 +45,10 @@ function BodySW(){
                 </div>
                 <div className="innerSuelo">
                     <div className="item-1"></div>
-                    <div className="item-2"></div>
-                    <div className="item-3"></div>
+                    <div className="item"></div>
+                    <div className="item"></div>
                     <div className="item-4"></div>
-                    <div className="item-5"></div>
+                    <div className="item"></div>
                     <div className="item-6"></div>
                 </div>
                 <div className="innerSuelo">
