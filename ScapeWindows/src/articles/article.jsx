@@ -1,13 +1,11 @@
-// import { classColor } from "../logic/constant";
-// import { articles } from "../logic/constant";
-export const Article = ({title, contenido, colorClass}) => {
-    
+import { resetNivel } from "../logic/constant";
+
+export const Article = ({id, contenido, setIndex}) => {
+
     return(
-        <>
-            <article className={`articulo ${colorClass}`}>
-                <h1>{title}</h1>
-                <p>{contenido}</p>
-            </article>
-        </>
+        <article className={`articulo`} id={id}>
+            <div className={`divContent`}>{contenido}</div>
+            <button onClick={() => resetNivel({setIndex})} >reset</button>
+        </article>
     )
 }

@@ -1,21 +1,23 @@
 import { useState } from "react";
 import { Article } from "./articles/article.jsx";
-import { articles, classColor } from "./logic/constant.js";
-
+import { articles} from "./logic/constant.js";
+import { niveles } from "./logic/niveles.jsx";
+// import { resetNivel } from "./logic/constant.js";
 export const Section = () => {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(() => {
+        //cargar desde localStorage si no es 0
+        const load = window.localStorage.getItem("actuality");
+        return load ? JSON.parse(load) : 0;
+    });
     const article = articles[index];
-    const colorClass = classColor[index];
-
-    const nexArticle = () => {
-        setIndex((prev) => (prev + 1) % articles.length);
-    }
-
+    //memorizar en cache y cambia cuando setIndex cambia 
+    //useMemo evita renderizados innecesarios
+    // eliminamos para evitar problemas con el save y el load en localStorage
+    const renderNiveles = niveles({setIndex});
     return (
         <section>
-            <Article title={article.title} contenido={article.contenido} colorClass={colorClass}/>
-            <button onClick={nexArticle}
-            >siguiente</button>
+            <h1>Nivel {index}</h1>
+            <Article id={article.id}  contenido={renderNiveles[index]} setIndex={setIndex}/>
         </section>
     )
 }

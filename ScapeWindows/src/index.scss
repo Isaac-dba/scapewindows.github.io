@@ -1,41 +1,111 @@
+@use "./sass/_article0.scss";
+@use "./sass/_article1.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Coral+Pixels&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Heebo:wght@100..900&family=Nosifer&family=Noto+Sans+Vai&family=Stick&family=Tagesschrift&display=swap');
+@font-face {
+  font-family: 'Coral Pixels';
+  src: url(../src/assets/font-family/Coral_Pixels/CoralPixels-Regular.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'Tagesschrift';
+  src: url(../src/assets/font-family/Tagesschrift/Tagesschrift-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  src: url(../src/assets/font-family/Caveat/Caveat-VariableFont_wght.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'Stick';
+  src: url(../src/assets/font-family/Stick/Stick-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Edu AU VIC WA NT Arrows';
+  src: url(../src/assets/font-family/Edu_AU_VIC_WA_NT_Arrows/EduAUVICWANTArrows-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nosifer';
+  src: url(../src/assets/font-family/Nosifer/Nosifer-Regular.ttf) format('truetype');
+}
+:root{
+  --font-pixels: 'Coral Pixels';
+  --font-tagesschrift: 'Tagesschrift';
+  --font-caveat: 'Caveat';
+  --font-stick: 'Stick';
+  --font-edu: 'Edu AU VIC WA NT Arrows';
+  --font-nosifer: 'Nosifer';
+}
 *, ::after, ::before{
   padding: 0%;
   margin: 0%;
-  font-family: cursive;
 }
 body{
   width: 100vw;
   height: 100vh;
   background-color: rgb(48, 57, 66);
   color: #b3b399;
-
   #root{
     width: 100vw;
     height: 100vh;
     display: flex;
-
     section{
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      perspective: 1000px;
+      gap: 10px;
+      overflow: hidden;
+      h1{
+        font-family: var(--font-stick);
+        // color: red;
+        // text-decoration:wavy underline;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        // font-size: 35px;
+        font-style: normal;
+      }
+      h2{
+        font-family: var(--font-noto);
+        font-weight: 400;
+        font-style: normal;
+        font-optical-sizing: auto;
+      }
       article{
-        width: 100px;
-        height: 100px;
-        background-color: aqua;
-
-        &.rojo    { background-color: #FF6B6B; }
-        &.verde   { background-color: #6BCB77; }
-        &.azul    { background-color: #4D96FF; }
-        &.amarillo { background-color: #FFD93D; color: #000; }
-  &.morado  { background-color: #9D4EDD; }
-  &.aqua    { background-color: #00B8A9; }
-  &.rosa    { background-color: #F76C6C; }
-  &.violeta { background-color: #845EC2; }
-  &.celeste { background-color: #2C73D2; }
-  &.cielo   { background-color: #0081CF; }
+        transform-style: preserve-3d;
+        width: 80%;
+        height: 70%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &.article1{ background-color: transparent; }
+        &.article2{ background-color: #6BCB77; }
+        &.article3{ background-color: #4D96FF; }
+        &.article4{ background-color: #FFD93D;}
+        &.article5{ background-color: #9D4EDD; }
+        &.article6{ background-color: #00B8A9; }
+        &.article7{ background-color: #F76C6C; }
+        &.article8{ background-color: #845EC2; }
+        &.article9{ background-color: #2C73D2; }
       }
     }
   }
+}
+
+// ::view-transition-new{
+//   animation: fade 2s ease-in-out both;
+// }
+// ::view-transition-old{
+//   animation: fade 2s ease-in-out both;
+// }
+::view-transition{
+  animation: fade 2s ease-in-out both;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0);}
+  to { opacity: 1; transform: scale(1);}
 }

@@ -1,0 +1,24 @@
+#article1{
+    // background-color: rgb(214, 112, 112);
+    h1{
+        font-size: 30px;
+    }
+    .divContent{
+        width: 80%;
+        height: 100%;
+        transform: rotateX(30deg) translateZ(-250px);
+        .floor{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50px);
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+            .square{
+                width: 50px;
+                height: 50px;
+                background-color: lightgreen;
+
+            }
+        }
+    }
+}
