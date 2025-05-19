@@ -88,18 +88,22 @@ export function Article0({setIndex}){
                 <strong className={classLetter("p")}>p</strong>arece. 
                 <strong className={classLetter("Z")}>Z</strong>
             </p>
-            <div className="contraseña">
+            <div className="contraseña" style={{opacity: esClaveCorrecta ? "0" : "1",
+                transition: esClaveCorrecta ? "opacity 1s linear 3s" : "opacity 1s linear 3s"
+            }}>
                 <input type="text" value={value} onChange={(e) => setValue(e.target.value)}
                 />
             </div>
-            <div className="pistas">
+            <div className="pistas" style={{opacity: esClaveCorrecta ? "0" : "1",
+                transition: esClaveCorrecta ? "opacity 1s linear 3s" : "opacity 1s linear 3s"
+            }}>
                 <RenderClave />
             </div>
             <div className="contenBtn" style={{
                 scale: esClaveCorrecta ? "1" : "0",
                 transition: esClaveCorrecta ? "scale 1s linear 3s"  : "scale 1s linear 0s"
             }}>
-                <button id="btn-0" onClick={() => handleNext({setIndex})}></button>
+                <button id="btn-0" onClick={() => handleNext({setIndex})}>push</button>
             </div>
         </>
     )
