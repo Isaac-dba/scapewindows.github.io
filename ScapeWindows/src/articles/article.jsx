@@ -6,6 +6,8 @@ export const Article = ({id, contenido, setIndex}) => {
         <article className={`articulo`} id={id}>
             <div className={`divContent`}>{contenido}</div>
             <button onClick={() => resetNivel({setIndex})} >reset</button>
+            {/* <button onClick={() => window.location.reload()} >reiniciar</button> */}
+
         </article>
     )
 }

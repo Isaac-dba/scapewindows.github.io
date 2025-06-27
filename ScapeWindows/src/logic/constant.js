@@ -5,7 +5,7 @@ export const articles = Array.from({length: 10}, (_, i) => ({
     id: `article${i}`,
 }));
 
-//animacion de los niveles
+//animacion de los niveles siquiente nivel
 export const handleNext = ({setIndex}) => {
     if(document.startViewTransition){
         document.startViewTransition(() => {
@@ -45,3 +45,15 @@ export const claves = [
     "pasaje invisible",//18
     "ojo de la pared"//19
 ];
+
+//generador de caminos aleatorios
+export const generatPath = () => {
+    const path = [];
+    let position = Math.floor(Math.random() * 5);
+    for(let row = 0; row < 10; row++){
+        path.push(position);
+        const move = Math.floor(Math.random() * 3) - 1;
+        position = Math.max(0, Math.min(4, position + move));
+    }
+    return path.map((col, row) => row * 5 + col);
+}

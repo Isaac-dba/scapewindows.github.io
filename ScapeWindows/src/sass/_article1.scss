@@ -1,24 +1,266 @@
-#article1{
-    // background-color: rgb(214, 112, 112);
-    h1{
-        font-size: 30px;
+@use "sass:math";
+//mixin ejemplo animation 
+
+
+// @mixin vibra($inicio, $fin, $intensidad, $paso) {
+//     $porcentaje: $inicio;
+//     @while $porcentaje <= $fin {
+//         $signo: if(random(2) == 1, 1, -1);
+//         $rotacion: $signo * $intensidad * random();
+//         $mover: $signo * 1px * random();
+        
+//         #{$porcentaje}% {
+//             transform: translateZ(25px) rotateY(#{$rotacion}) translateX(#{$mover});
+//         }
+//         $porcentaje: $porcentaje + $paso;
+//     }
+// }
+
+@mixin relojTransform($x, $y, $scale, $rotate){
+    transform: translate($x, $y) scale($scale);
+    .clockwiseContainer{
+        transform: rotateZ($rotate);
     }
+}
+
+#article1{
     .divContent{
-        width: 80%;
+        width: 100%;
         height: 100%;
-        transform: rotateX(30deg) translateZ(-250px);
+        transform-style: preserve-3d;
+        display: grid;
+        place-items: center;
+        .contentReloj{
+            position: relative;
+            width: 0px;
+            height: 0px;
+            :nth-child(1){
+                .innerReloj{
+                    .clockwiseContainer{
+                        transform: rotateZ(-20deg);
+                    }
+                }
+            }
+            :nth-child(2){
+                @include relojTransform(110px, 100px, 0.7, -25deg);
+            }:nth-child(3){
+                @include relojTransform(-200px, 100px, 0.7, -45deg)
+            } :nth-child(4){
+                @include relojTransform(100px, 0px, 0.8, -75deg);
+            } :nth-child(5){
+                @include relojTransform(-200px, 0px, 0.8, 105deg);
+            } :nth-child(6){ 
+                @include relojTransform(100px, -100px, 0.8, -130deg);
+            } :nth-child(7){
+                @include relojTransform(-200px, -100px, 0.8, -165deg);
+            } :nth-child(8){
+                @include relojTransform(-100px, -110px, 0.7, -195deg);
+            } :nth-child(9){
+                @include relojTransform(0px, -110px, 0.7, -225deg);
+            } :nth-child(10){
+                @include relojTransform(-100px, 0px, 0.8, 100deg);
+            } 
+        }
+
+        // reloj  None
+        //reloj none
+        @for $i from 0 through 9{
+            .reloj#{$i}{
+                opacity: 0;
+            }
+        }
+        .reloj{
+            width: 85px;
+            height: 85px;
+            background-color: #ffff;
+            position: absolute;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            border: solid 3px #a856568a;
+            box-shadow: inset 0 0 10px 10px #86424288, 0 0 10px 10px #ffffff2a;
+            .innerReloj{
+                display: grid;
+                place-items: center;
+                
+                .checkReloj{
+                    background-color: #6ef881af;
+                }
+                .clockwiseContainer{
+                    position: absolute;
+                    width: 15px;
+                    height: 10px;
+                    .clockCenter{
+                        background-color: #000000;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .clockHora{
+                        background-color: #000000;
+                        width: 20px;
+                        height: 1px;
+                        position: relative;
+                        transform-origin: 0% 0%;
+                        animation: reloj1 86400s linear infinite;
+                    }
+                    .clockMin{
+                        background-color: #000000;
+                        width: 30px;
+                        height: 1px;
+                        position: relative;
+                        transform-origin: 0% 0%;
+                        animation: reloj2 3600s linear infinite;
+                    }
+                    .clockSec{
+                        background-color: #000000;
+                        width: 25px;
+                        height: 1px;
+                        position: relative;
+                        transform-origin: 0% 0%;
+                        animation: reloj3 60s linear infinite;
+                    }
+                }
+            }
+            @for $i from 1 through 60{
+                $angle: math.div(360, 60) * $i;
+                .punto#{$i}{
+                    width: 1px;
+                    height: 5px;
+                    background-color: #000;
+                    position: absolute;
+                    transform: rotate(#{$angle}deg) translateY(-40px);
+                }
+                @if $i == 60 or $i == 5 or $i == 10
+                or $i == 15 or $i == 20 or $i == 25
+                or $i == 30 or $i == 35 or $i == 40
+                or $i == 45 or $i == 50 or $i == 55{
+                    .punto#{$i}{
+                        transform: rotate(#{$angle}deg) translateY(-37.5px) scaleY(2);
+                    }
+                } 
+                
+            }
+        }
         .floor{
+            background-color: #0000008a;
+            width: 300px;
             display: grid;
             grid-template-columns: repeat(auto-fill, 50px);
-            gap: 10px;
+            gap: 5px;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
+            transform: rotateX(60deg) translateY(-150px) rotateZ(180deg);
+            transform-style: preserve-3d;
+            #btn-1{
+                position: absolute;
+                background-color: transparent;
+                margin: 90% 47%;
+                padding: 10px;
+                border-width: 5px 5px 5px 5px;
+                border-color: blueviolet;
+                box-shadow: inset 0 2px 1px 0px beige;
+                &:hover{
+                    box-shadow: inset 0 -2px 2.5px 0px beige;
+                }
+            } 
             .square{
                 width: 50px;
                 height: 50px;
-                background-color: lightgreen;
-
+                background-color: rgba(255, 255, 255, 0.1);
+                border: solid 1px rgba(255, 255, 255, 0.2);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
+                transform: translateZ(25px) rotate(180deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+            .true{
+                animation: true 1s ease-in-out forwards;
+            }
+            .false{
+                animation: glass 35s ease-in-out forwards;
+            }
+            .win{
+                transform: translateZ(0px);
+                opacity: 0;
+                transition: all 0.5s ease-in-out 1s;
+            }
+        } 
+        .winFloor{
+            transform: scale(0.1) translateY(-190%);
+            transition: transform 1s ease-in-out 1.5s;
+        }
+        //variable
+        $shadows: (
+            0: -98px,
+            1: -150px,
+            2: -200px,
+            3: -251px,
+            4: -302px,
+            5: -359px,
+            6: -412px,
+            7: -465px,
+            8: -520px,
+            9: -575px
+        );
+        .shadowFloor{
+            position: absolute;
+            width: 300px;
+            height: 550px;
+            background-color: #ffffff00;
+            transform: rotateX(60deg) translateY(-98px);
+            @for $i from 0 through 9{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateY(map-get($shadows, $i));
+                }
+            }
+        }
+    }
+}
+
+@keyframes true{
+    50%, 100%{
+        box-shadow: inset 0 0 15px 5px #6ef881af;
+    }
+}
+//false
+
+
+@keyframes glass {
+    $item : 3.22;
+    0%{
+        transform:  translateZ(25px);
+        box-shadow: inset 0 0 15px 5px #ad0909af;
+    }
+    2%{
+        box-shadow: none;
+    }
+    //ejemplo mixin como incluir 
+    // @include vibra(50, 88, 10deg, 3);
+    89%{
+        transform: translateZ(25px);
+        opacity: 1;
+    }
+    90%{
+        transform: translateZ(-10px);
+    }
+    91%,100%{
+        opacity: 0;
+    }
+}
+
+//reloj animation
+@for $i from 1 through 3{
+    @keyframes reloj#{$i} {
+        0%{
+            transform: translate(5px, -4px + -$i) rotateZ(0deg + ($i * 20));
+        }
+        100%{
+            transform: translate(5px, -4px + -$i) rotateZ(360deg + ($i * 20));
         }
     }
 }
