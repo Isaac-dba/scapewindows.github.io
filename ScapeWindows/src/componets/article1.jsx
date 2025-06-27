@@ -69,7 +69,7 @@ export function Article1({setIndex}){
                 <button id="btn-1" onClick={() => handleNext({setIndex})}
                     style={{transform : trueClicks.length == 10 
                         ? "scaleY(20) scaleX(10)" : "scale(0)",
-                        transition: "transform 2s ease 2.5s"}}></button>
+                        transition: "transform 2s ease 2s"}}></button>
             </div>
         </>
     )
