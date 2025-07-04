@@ -191,30 +191,11 @@
             transform: scale(0.1) translateY(-190%);
             transition: transform 1s ease-in-out 1.5s;
         }
-        //variable
-        $shadows: (
-            0: -98px,
-            1: -150px,
-            2: -200px,
-            3: -251px,
-            4: -302px,
-            5: -359px,
-            6: -412px,
-            7: -465px,
-            8: -520px,
-            9: -575px
-        );
         .shadowFloor{
             position: absolute;
             width: 300px;
             height: 550px;
             background-color: #ffffff00;
-            transform: rotateX(60deg) translateY(-98px);
-            @for $i from 0 through 9{
-                &.shadow#{$i}{
-                    transform: rotateX(60deg) translateY(map-get($shadows, $i));
-                }
-            }
         }
     }
 }
@@ -271,4 +252,151 @@
         box-shadow: inset 0 -1px 10px 0px red,
                     inset 0 1px 20px 0px blue;
     }
+}
+
+
+
+//hacer media query para que se vea bien en pantallas pequeñas
+ $shadows: (
+            0: -190px,
+            1: -240px,
+            2: -300px,
+            3: -351px,
+            4: -402px,
+            5: -459px,
+            6: -512px,
+            7: -565px,
+            8: -620px,
+            9: -675px
+        );
+@media (min-height: 600px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(120px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 640px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(100px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 667px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(86px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 720px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(55px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (min-height: 740px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(45px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (min-height: 800px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 844px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 882px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 896px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(9px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 914px) {
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(-1px +map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (min-height: 932px) {
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(8px +map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (min-height: 1024px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(35px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 1024px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(35px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (min-height: 1280px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(110px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-width: 375px){
+        .shadowFloor{
+            left: 5px;
+        }
 }

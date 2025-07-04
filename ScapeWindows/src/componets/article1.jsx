@@ -20,7 +20,7 @@ export function Article1({setIndex}){
     }, []);
     //verificar camino
     const checkedPath = (i) => path.includes(i);
-    
+    console.log(innerHeight)
     const contentReloj = [
         <Reloj path={[path[0]]} />,
         <Reloj path={[path[1]]}/>,
