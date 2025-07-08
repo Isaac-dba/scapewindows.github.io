@@ -19,6 +19,7 @@ export function Article1({setIndex}){
         audioRef.current = new Audio(import.meta.env.BASE_URL + "/sound/ticking-clock-background-sound-effect-331707.mp3");
     }, []);
     //verificar camino
+    console.log(clicked);
     const checkedPath = (i) => path.includes(i);
     const contentReloj = [
         <Reloj path={[path[0]]} />,
@@ -53,7 +54,11 @@ export function Article1({setIndex}){
                     
                     onClick={() => {
                         if(checkedPath(i)){
-                            document.querySelector(`.square${i}`).classList.add("true");
+                            if(clicked === i){
+                                return;
+                            }else{
+                                document.querySelector(`.square${i}`).classList.add("true");
+                            }
                             setTrueClicks((prev) => [...prev, "true"]);
                         }else{
                             document.querySelector(`.square${i}`).classList.add("false");
