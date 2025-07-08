@@ -61,7 +61,11 @@ export function Article1({setIndex}){
                             }
                             setTrueClicks((prev) => [...prev, "true"]);
                         }else{
-                            document.querySelector(`.square${i}`).classList.add("false");
+                            if(clicked === i){
+                                return;
+                            }else{
+                                document.querySelector(`.square${i}`).classList.add("false");
+                            }
                             setFalseClicks((prev) => [...prev, "false"]);
                             audioRef.current?.play();
                         }

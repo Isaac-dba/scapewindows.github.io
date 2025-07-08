@@ -197,7 +197,7 @@
             position: absolute;
             width: 300px;
             height: 550px;
-            background-color: #ffffff;
+            background-color: #a81265;
         }
     }
 }
@@ -227,8 +227,12 @@
     90%{
         transform: translateZ(-10px);
     }
-    91%,100%{
+    91%,99%{
         opacity: 0;
+        transform: scale(0) translateZ(-10px);
+    }
+    100%{
+        transform: scale(0) translateZ(-10px);
     }
 }
 
@@ -288,33 +292,33 @@
 //             }       
 //         }
 // }
-@media (min-height: 667px) {
-    @for $i from 0 through 9{
-            .shadowFloor{
-                &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(20px) translateY(86px + map-get($shadows, $i));
-                }
-            }       
-        }
-}
-@media (min-height: 720px){
-    @for $i from 0 through 9{
-        .shadowFloor{
-            &.shadow#{$i}{
-                transform: rotateX(60deg) translateZ(20px) translateY(55px + map-get($shadows, $i));
-            }
-        }
-    }
-}
-@media (min-height: 740px){
-    @for $i from 0 through 9{
-        .shadowFloor{
-            &.shadow#{$i}{
-                transform: rotateX(60deg) translateZ(20px) translateY(45px + map-get($shadows, $i));
-            }
-        }
-    }
-}
+// @media (min-height: 667px) {
+//     @for $i from 0 through 9{
+//             .shadowFloor{
+//                 &.shadow#{$i}{
+//                     transform: rotateX(60deg) translateZ(20px) translateY(86px + map-get($shadows, $i));
+//                 }
+//             }       
+//         }
+// }
+// @media (min-height: 720px){
+//     @for $i from 0 through 9{
+//         .shadowFloor{
+//             &.shadow#{$i}{
+//                 transform: rotateX(60deg) translateZ(20px) translateY(55px + map-get($shadows, $i));
+//             }
+//         }
+//     }
+// }
+// @media (min-height: 740px){
+//     @for $i from 0 through 9{
+//         .shadowFloor{
+//             &.shadow#{$i}{
+//                 transform: rotateX(60deg) translateZ(20px) translateY(120px + map-get($shadows, $i));
+//             }
+//         }
+//     }
+// }
 @media (min-height: 800px) {
     @for $i from 0 through 9{
             .shadowFloor{
@@ -368,15 +372,6 @@
             }
         }
     }
-}
-@media (min-height: 1024px) {
-    @for $i from 0 through 9{
-            .shadowFloor{
-                &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(20px) translateY(35px + map-get($shadows, $i));
-                }
-            }       
-        }
 }
 @media (min-height: 1024px) {
     @for $i from 0 through 9{
