@@ -197,7 +197,7 @@
             position: absolute;
             width: 300px;
             height: 550px;
-            background-color: #a81265;
+            background-color: #0f58c5;
         }
     }
 }
@@ -274,7 +274,385 @@
             8: -620px,
             9: -675px
         );
-@media (min-height: 600px) {
+@media (max-height: 2166px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(295px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2146px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(290px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2126px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(285px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2106px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(280px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2086px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(280px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2066px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(275px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2046px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(275px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2026px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(270px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 2006px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(265px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1986px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(262.5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1966px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(260px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1946px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(255px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1926px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(250px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1906px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(245px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1886px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(245px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1866px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(240px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1846px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(235px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1826px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(230px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1806px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(225px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1786px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(222.5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1766px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(220px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1746px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(215px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1726px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(210px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1706px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(205px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1686px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(202px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1666px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(200px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1646px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(195px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1626px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(190px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1606px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(185px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1586px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(180px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1566px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(175px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1546px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(170px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1526px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(165px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1506px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(165px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1486px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(160px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1466px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(155px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1446px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(150px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1426px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(145px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1406px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(140px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1386px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(135px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1366px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(130px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1346px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(125px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1326px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
@@ -283,97 +661,151 @@
             }       
         }
 }
-// @media (min-height: 640px) {
-//     @for $i from 0 through 9{
-//             .shadowFloor{
-//                 &.shadow#{$i}{
-//                     transform: rotateX(60deg) translateZ(20px) translateY(100px + map-get($shadows, $i));
-//                 }
-//             }       
-//         }
-// }
-// @media (min-height: 667px) {
-//     @for $i from 0 through 9{
-//             .shadowFloor{
-//                 &.shadow#{$i}{
-//                     transform: rotateX(60deg) translateZ(20px) translateY(86px + map-get($shadows, $i));
-//                 }
-//             }       
-//         }
-// }
-// @media (min-height: 720px){
-//     @for $i from 0 through 9{
-//         .shadowFloor{
-//             &.shadow#{$i}{
-//                 transform: rotateX(60deg) translateZ(20px) translateY(55px + map-get($shadows, $i));
-//             }
-//         }
-//     }
-// }
-// @media (min-height: 740px){
-//     @for $i from 0 through 9{
-//         .shadowFloor{
-//             &.shadow#{$i}{
-//                 transform: rotateX(60deg) translateZ(20px) translateY(120px + map-get($shadows, $i));
-//             }
-//         }
-//     }
-// }
-@media (min-height: 800px) {
+@media (max-height: 1306px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(20px) translateY(5px + map-get($shadows, $i));
+                    transform: rotateX(60deg) translateZ(20px) translateY(115px + map-get($shadows, $i));
                 }
             }       
         }
 }
-@media (min-height: 844px) {
+@media (max-height: 1286px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(30px) translateY(map-get($shadows, $i));
+                    transform: rotateX(60deg) translateZ(20px) translateY(110px + map-get($shadows, $i));
                 }
             }       
         }
 }
-@media (min-height: 882px) {
+@media (max-height: 1266px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(30px) translateY(5px + map-get($shadows, $i));
+                    transform: rotateX(60deg) translateZ(20px) translateY(105px + map-get($shadows, $i));
                 }
             }       
         }
 }
-@media (min-height: 896px) {
+@media (max-height: 1246px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(30px) translateY(9px + map-get($shadows, $i));
+                    transform: rotateX(60deg) translateZ(20px) translateY(100px + map-get($shadows, $i));
                 }
             }       
         }
 }
-@media (min-height: 914px) {
+@media (max-height: 1226px) {
     @for $i from 0 through 9{
-        .shadowFloor{
-            &.shadow#{$i}{
-                transform: rotateX(60deg) translateZ(20px) translateY(-1px +map-get($shadows, $i));
-            }
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(95px + map-get($shadows, $i));
+                }
+            }       
         }
-    }
 }
-@media (min-height: 932px) {
+@media (max-height: 1206px) {
     @for $i from 0 through 9{
-        .shadowFloor{
-            &.shadow#{$i}{
-                transform: rotateX(60deg) translateZ(20px) translateY(8px +map-get($shadows, $i));
-            }
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(90px + map-get($shadows, $i));
+                }
+            }       
         }
-    }
 }
-@media (min-height: 1024px) {
+@media (max-height: 1186px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(85px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1166px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(80px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1146px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(75px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1126px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(70px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1106px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(65px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1086px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(60px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1066px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(55px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1046px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(50px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1026px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(45px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 1006px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(40px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 986px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
@@ -382,11 +814,253 @@
             }       
         }
 }
-@media (min-height: 1280px) {
+@media (max-height: 966px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(20px + map-get($shadows, $i));
+            }
+        }
+    }
+}        
+@media (max-height: 946px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(10px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (max-height: 926px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(5px + map-get($shadows, $i));
+            }
+        }
+    }
+}        
+@media (max-height: 906px) {
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (max-height: 896px) {
     @for $i from 0 through 9{
             .shadowFloor{
                 &.shadow#{$i}{
-                    transform: rotateX(60deg) translateZ(20px) translateY(110px + map-get($shadows, $i));
+                    transform: rotateX(60deg) translateZ(30px) translateY(5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 886px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(5px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 866px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 846px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(30px) translateY(map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 826px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(30px) translateY(5px + map-get($shadows, $i));
+            }
+        }
+    }
+}    
+@media (max-height: 806px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(map-get($shadows, $i));
+                }
+            }       
+        }
+} 
+@media (max-height: 786px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(15px + map-get($shadows, $i));
+            }
+        }
+    }
+}    
+@media (max-height: 766px) {
+    @for $i from 0 through 9{
+            
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(25px + map-get($shadows, $i));
+            }
+        }
+    }
+}    
+@media (max-height: 756px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(30px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+//funciona
+@media (max-height: 746px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(35px) translateY(30px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+// no funciona hasta aquí
+@media (max-height: 726px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(50px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (max-height: 706px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(60px + map-get($shadows, $i));
+            }
+        }
+    }
+}
+@media (max-height: 686px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(70px + map-get($shadows, $i));
+                }
+            }       
+        }
+}     
+@media (max-height: 667px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(85px + map-get($shadows, $i));
+            }
+        }
+    }
+}  
+@media (max-height: 666px){
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(85px + map-get($shadows, $i));
+            }
+        }
+    }
+}  
+@media (max-height: 646px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(95px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 626px) {
+        @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(105px + map-get($shadows, $i));
+            }
+        }       
+    }
+}
+@media (max-height: 606px) {
+    @for $i from 0 through 9{
+        .shadowFloor{
+            &.shadow#{$i}{
+                transform: rotateX(60deg) translateZ(20px) translateY(115px + map-get($shadows, $i));
+            }
+        }       
+    }
+}
+@media (max-height: 586px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(125px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 566px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(135px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 546px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(145px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 526px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(155px + map-get($shadows, $i));
+                }
+            }       
+        }
+}
+@media (max-height: 506px) {
+    @for $i from 0 through 9{
+            .shadowFloor{
+                &.shadow#{$i}{
+                    transform: rotateX(60deg) translateZ(20px) translateY(165px + map-get($shadows, $i));
                 }
             }       
         }
