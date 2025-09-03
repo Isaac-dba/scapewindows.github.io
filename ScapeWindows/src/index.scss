@@ -74,6 +74,8 @@ body{
         font-optical-sizing: auto;
       }
       article{
+        // background-color: red;
+        position: relative;
         transform-style: preserve-3d;
         width: 80%;
         height: 70%;
@@ -81,15 +83,15 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        &.article1{ background-color: transparent; }
-        &.article2{ background-color: #6BCB77; }
-        &.article3{ background-color: #4D96FF; }
-        &.article4{ background-color: #FFD93D;}
-        &.article5{ background-color: #9D4EDD; }
-        &.article6{ background-color: #00B8A9; }
-        &.article7{ background-color: #F76C6C; }
-        &.article8{ background-color: #845EC2; }
-        &.article9{ background-color: #2C73D2; }
+        &#article1{ background-color: transparent; }
+        // &#article2{ background-color: #6BCB77; }
+        &#article3{ background-color: #4D96FF; }
+        &#article4{ background-color: #FFD93D;}
+        &#article5{ background-color: #9D4EDD; }
+        &#article6{ background-color: #00B8A9; }
+        &#article7{ background-color: #F76C6C; }
+        &#article8{ background-color: #845EC2; }
+        &#article9{ background-color: #2C73D2; }
       }
     }
   }
