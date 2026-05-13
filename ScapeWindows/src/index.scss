@@ -34,6 +34,10 @@
   --font-stick: 'Stick';
   --font-edu: 'Edu AU VIC WA NT Arrows';
   --font-nosifer: 'Nosifer';
+  --color-text: rgb(61, 61, 61);
+  --font-inner-size: 15px;
+  --color-ns: rgb(255, 119, 0);
+  --color-title: rgb(119, 119, 119);
 }
 *, ::after, ::before{
   padding: 0%;
@@ -80,14 +84,16 @@ body{
         width: max-content;
         height: max-content;
         position: absolute;
-        bottom: 20px;
+        bottom: 15px;
         display: flex;
-        gap: 10px;
+        gap: 15px;
         .btnSection{
           font-family: var(--font-caveat);
-          width: 100px;
+          // width: 100px;
+          padding: 10px 20px;
           border: none;
           border-radius: 5px;
+          // pointer-events: none;
         }
       }
     }
